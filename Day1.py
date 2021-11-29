@@ -1,0 +1,5 @@
+print("\tWelcome to the gamer nickname generator!\nPlease, enter the name of the city you grew in: ")
+city = input()
+print("Now please, enter the age you start playing video games: ")
+age = input()
+print("Your gamer nickgame is Xx" + city + age)
