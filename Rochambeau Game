@@ -52,4 +52,4 @@ elif computer_choice > player_choice:
 elif player_choice > computer_choice:
   print("You win!")
 elif computer_choice == player_choice:
-  print("It's a draw")
+  print("It's a draw!")
