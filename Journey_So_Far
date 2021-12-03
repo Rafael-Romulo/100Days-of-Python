@@ -2,7 +2,7 @@
 Accumulated knowledge of the course
 
 Day 01: String Manipulation, Debugging and Variable Naming
-#I already knew most of it but it's always good to remind.
+#I already knew most of it but it's always good to re-watch what you know.
 
 Days 02: Data Types, Mathematical Operations and Number Manipulation
 #I don't understand why f-string isn't the standard way to print :expressionless:.
@@ -16,4 +16,7 @@ Day 04: Mostly random modules and nested lists manipulation
 Day 05: Python For Loops
 #Using if statements inside for loops can be done with so many different aproaches
 
-Day 06: 
+Day 06: While Loops
+#Personal reminder: use while loops when you don't know how many times you need to iterate a code block.
+
+Day 07: 
