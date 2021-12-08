@@ -28,4 +28,5 @@ Day 08: Functions parameters and arguments
 Day 09: Dictionaries, nesting lists inside dictionaries and vice versa
 #Now I have to remember that after the key declaration you need colon to attribute a reference
 
-DAY 10:
+DAY 10: Using returns in functions and Docstrings
+#
