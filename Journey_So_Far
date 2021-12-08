@@ -25,4 +25,7 @@ Day 07: The whole day was dedicated to create a hangman game with 213 words and 
 Day 08: Functions parameters and arguments
 #Assinging and indicating what parameter carries what values is very useful and way better than just using positional argument
 
-Day 09:
+Day 09: Dictionaries, nesting lists inside dictionaries and vice versa
+#Now I have to remember that after the key declaration you need colon to attribute a reference
+
+DAY 10:
