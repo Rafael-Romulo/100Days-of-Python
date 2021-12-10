@@ -1,0 +1,62 @@
+import random
+
+
+def guessing_game():
+    random_num = random.randint(1, 100)
+    print("""
+ ██████╗ ██╗   ██╗███████╗███████╗███████╗██╗███╗   ██╗ ██████╗ 
+██╔════╝ ██║   ██║██╔════╝██╔════╝██╔════╝██║████╗  ██║██╔════╝ 
+██║  ███╗██║   ██║█████╗  ███████╗███████╗██║██╔██╗ ██║██║  ███╗
+██║   ██║██║   ██║██╔══╝  ╚════██║╚════██║██║██║╚██╗██║██║   ██║
+╚██████╔╝╚██████╔╝███████╗███████║███████║██║██║ ╚████║╚██████╔╝
+ ╚═════╝  ╚═════╝ ╚══════╝╚══════╝╚══════╝╚═╝╚═╝  ╚═══╝ ╚═════╝ 
+                                                                
+ ██████╗  █████╗ ███╗   ███╗███████╗                            
+██╔════╝ ██╔══██╗████╗ ████║██╔════╝                            
+██║  ███╗███████║██╔████╔██║█████╗                              
+██║   ██║██╔══██║██║╚██╔╝██║██╔══╝                              
+╚██████╔╝██║  ██║██║ ╚═╝ ██║███████╗                            
+ ╚═════╝ ╚═╝  ╚═╝╚═╝     ╚═╝╚══════╝                            
+                                                                
+""")
+
+    lives = 0
+    difficulty = input(
+        "\nWelcome to the Number Guessing Game!\nI'm thinking of a number between 1 and 100.\nChoose a difficulty. Type `easy` or `hard` > "
+    )
+
+    if difficulty == "easy":
+        print("You selected the easy difficulty, you have 10 lives")
+        lives = 10
+    elif difficulty == "hard":
+        print("You selected the hard difficulty, you have 5 lives")
+        lives = 5
+    else:
+        print("\nPlease, type a valid difficulty.\n")
+        return
+
+    should_continue = True
+
+    while should_continue and lives != 0:
+        guess = int(input("Guess a number: "))
+        if guess == random_num:
+            print("\nYou have successfully guessed the correct number. Congratulations!\n")
+            should_continue = False
+        elif guess > random_num:
+            print("Too high!\nGuess again")
+            lives -= 1
+            print(f"You have {lives} attempts remaining to guess the number.\n")
+        elif guess < random_num:
+            print("Too low!\nGuess again\n")
+            lives -= 1
+            print(f"You have {lives} attempts remaining to guess the number.\n")
+        else:
+            print("Please enter a valid number\n")
+    if lives == 0:
+        print("\nYou lost all your lives! You lose.\n")
+
+
+while input("Type 'y' to play the guessing game or type 'n' to quit> ") == "y":
+    guessing_game()
+
+print("\tThank you for playing the Guessing Game!")
