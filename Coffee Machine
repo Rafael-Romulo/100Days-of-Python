@@ -28,8 +28,9 @@ resources = {
     "water": 300,
     "milk": 200,
     "coffee": 100,
-    "money_in_machine" : 0.0
+    "money_in_machine": 0.0
 }
+
 
 def machine_running():
     choice = input("What would you like? (espresso/latte/cappuccino): ")
@@ -41,8 +42,8 @@ def machine_running():
         quarters = int(input("How many quarters? "))
         dimes = int(input("How many dimes? "))
         nickles = int(input("How many nickles? "))
-        pennies =int(input("How many pennies? "))
-        money = quarters*0.25 + dimes*0.10 + nickles*0.05 + pennies * 0.01
+        pennies = int(input("How many pennies? "))
+        money = quarters * 0.25 + dimes * 0.10 + nickles * 0.05 + pennies * 0.01
 
     if choice == "espresso":
         price = MENU["espresso"]["cost"]
@@ -51,7 +52,7 @@ def machine_running():
             if resources["water"] < MENU["espresso"]["ingredients"]["water"]:
                 print("Sorry, not enough water to make your order. Money refunded.")
                 machine_running()
-            if resources["coffee"] < MENU["espresso"]["ingredients"]["coffee"]:
+            elif resources["coffee"] < MENU["espresso"]["ingredients"]["coffee"]:
                 print("Sorry, not enough coffee to make your order. Money refunded.")
                 machine_running()
             else:
@@ -73,10 +74,10 @@ def machine_running():
             if resources["water"] < MENU["latte"]["ingredients"]["water"]:
                 print("Sorry, not enough water to make your order. Money refunded")
                 machine_running()
-            if resources["coffee"] < MENU["latte"]["ingredients"]["coffee"]:
+            elif resources["coffee"] < MENU["latte"]["ingredients"]["coffee"]:
                 print("Sorry, not enough coffee to make your order. Money refunded.")
                 machine_running()
-            if resources["milk"] < MENU["latte"]["ingredients"]["milk"]:
+            elif resources["milk"] < MENU["latte"]["ingredients"]["milk"]:
                 print("Sorry, not enough milk to make your order. Money refunded.")
                 machine_running()
             else:
@@ -96,13 +97,10 @@ def machine_running():
             money = money - price
             if resources["water"] < MENU["cappuccino"]["ingredients"]["water"]:
                 print("Sorry, not enough water to make your order. Money refunded.")
-                machine_running()
-            if resources["coffee"] < MENU["cappuccino"]["ingredients"]["coffee"]:
+            elif resources["coffee"] < MENU["cappuccino"]["ingredients"]["coffee"]:
                 print("Sorry, not enough coffee to make your order. Money refunded.")
-                machine_running()
-            if resources["milk"] < MENU["cappuccino"]["ingredients"]["milk"]:
+            elif resources["milk"] < MENU["cappuccino"]["ingredients"]["milk"]:
                 print("Sorry, not enough milk to make your order. Money refunded.")
-                machine_running()
             else:
                 print(f"Here is ${money} in change.")
                 print("Here is your cappuccino. Enjoy!")
@@ -121,5 +119,6 @@ def machine_running():
         print("Coffee: " + str(resources["coffee"]))
         print("Money: " + str(resources["money_in_machine"]))
         machine_running()
-        
+
+
 machine_running()
