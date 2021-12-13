@@ -117,7 +117,7 @@ def machine_running():
         print("Water: " + str(resources["water"]))
         print("Milk: " + str(resources["milk"]))
         print("Coffee: " + str(resources["coffee"]))
-        print("Money: " + str(resources["money_in_machine"]))
+        print("Money: $" + str(resources["money_in_machine"]))
         machine_running()
 
 
