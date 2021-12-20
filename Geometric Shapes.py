@@ -5,6 +5,7 @@ from random import random
 screen = Screen()
 Lentin = Turtle()
 Lentin.speed("fastest")
+Lentin.hideturtle()
 
 answer = int(screen.textinput(title = "Geometry", prompt= "Type any number above 3")) + 1
 
