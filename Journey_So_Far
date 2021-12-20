@@ -5,7 +5,7 @@ Day 01: String Manipulation, Debugging and Variable Naming
 #I already knew most of it but it's always good to re-watch what you know.
 
 Days 02: Data Types, Mathematical Operations and Number Manipulation
-#I don't understand why f-string isn't the standard way to print :expressionless:.
+#I don't understand why f-string isn't the standard way to print (~_~)
 
 Day 03: Nested if statements, elif statements and logical operators
 #It was so much fun creating the leap year calculator, it was my second time making a nested if statement but it was my first using it with numbers in python. The game itself was pretty simple.
@@ -14,7 +14,7 @@ Day 04: Mostly random modules and nested lists manipulation
 #Like the first time I encountered 'for loops', the random module open a whole new world for me. Debugging can be as hard as it is to write the code in the first place.
 
 Day 05: Python For Loops
-#Using if statements inside for loops can be done with so many different aproaches
+#Using if statements inside for loops can be done with so many different aproaches.
 
 Day 06: While Loops
 #Personal reminder: use while loops when you don't know how many times you need to iterate a code block.
@@ -23,28 +23,28 @@ Day 07: The whole day was dedicated to create a hangman game with 213 words and 
 #Lists and strings can be similarly altered and manipulated, but you need the right tools to achieve it.
 
 Day 08: Functions parameters and arguments
-#Assinging and indicating what parameter carries what values is very useful and way better than just using positional argument
+#Assinging and indicating what parameter carries what values is very useful and way better than just using positional argument.
 
 Day 09: Dictionaries, nesting lists inside dictionaries and vice versa
-#Now I have to remember that after the key declaration you need colon to attribute a reference
+#Now I have to remember that after the key declaration you need colon to attribute a reference.
 
 DAY 10: Using returns in functions and Docstrings
-#I can believe I got to the tenth day and I'll keep going
+#I can believe I got to the tenth day and I'll keep going.
 
 Day 11: Creating a game of Blackjack
-#No new topic was presented, except the functions to remove and sum the itens inside a list
+#No new topic was presented, except the functions to remove and sum the itens inside a list.
 
 Day 12: Scope and Global Variables
-#Created the Number Guessing Game and fortunately wasn't too difficult for me
+#Created the Number Guessing Game and fortunately wasn't too difficult for me.
 
 Day 13: Practicing Debugging
 #Ten tips were presented to fix a program (including the usage of PythonTutor)
 
 Day 14: Creating the Higher or Lower Comparison Game
-#It took a lot of syntax to get here and I`m happy that I could make this game without so many bugs
+#It took a lot of syntax to get here and I`m happy that I could make this game without so many bugs.
 
 Day 15: Coffee Machine 
-#This exercise could be simpler if I knew that I could create more functions than tasks
+#This exercise could be simpler if I knew that I could create more functions than tasks.
 
 Day 16: Object Oriented Programming
 #Finally got into intermediate section and I'm proud of myself.
@@ -56,6 +56,10 @@ Day 18: Graphical User Interface (GUI)
 #Programming and controlling graphics using the Turtle module was fun and made me use my mathematical thinking, which I love to do.
 
 Day 19: Event Listeners, State and Multiple Instances
-#
+#It was a surprise to me the amount of logic you need to have in order to complete a simple race game but I believe I did a good job.
 
-Day 20:
+DAY 20: Animation and Coordinates (Snake Game - Start)
+#Whoever created the time module for python was a genius.
+
+Day 21: Inheritance and List Slicing (Snake Game - Final)
+#
