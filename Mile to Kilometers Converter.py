@@ -4,7 +4,7 @@ from tkinter import *
 def button_clicked():
     num = float(input.get())
     new_value = round(num*1.609, 2)
-    num_converted.config(text=new_value)
+    num_converted.config(text=f"{new_value}")
 
 
 screen = Tk()
